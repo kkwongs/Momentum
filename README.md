@@ -12,3 +12,4 @@ chrome app Momentum을 Vanilla JS를 사용해서 클론하였습니다.
 
 - 시계
 - To Do List
+- 날씨
