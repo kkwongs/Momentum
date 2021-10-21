@@ -1,0 +1,8 @@
+.toDo {
+  font-size: 22px;
+}
+
+.toDo__button {
+  margin-right: 10px;
+  cursor: pointer;
+}
