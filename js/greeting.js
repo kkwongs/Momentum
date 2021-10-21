@@ -21,10 +21,22 @@ function askForName() {
   form.addEventListener('submit', handleSubmit);
 }
 
+function changeGreeting(event) {
+  event.preventDefault();
+  form.classList.add(SHOWING_CL);
+  greeting.classList.remove(SHOWING_CL);
+  localStorage.removeItem(USER_LS);
+}
+
 function paintGreeting(text) {
+  const changeName = document.createElement('button');
+  changeName.innerHTML = '🖍';
+  changeName.className = 'changeName__button';
+  changeName.addEventListener('click', changeGreeting);
   form.classList.remove(SHOWING_CL);
   greeting.classList.add(SHOWING_CL);
   greeting.innerText = `Hello! ${text}.`;
+  greeting.appendChild(changeName);
 }
 
 function loadName() {
