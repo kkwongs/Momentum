@@ -1,11 +1,13 @@
 # Momentum
 
-## 프로젝트 소개
-
 chrome app Momentum을 Vanilla JS를 사용해서 클론하였습니다.
 
-## 기능
+## Features
 
 - 시계
 - To Do List
 - 날씨
+
+## Try it out
+
+https://kkwongs.github.io/Momentum/
