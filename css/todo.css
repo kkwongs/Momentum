@@ -1,19 +1,33 @@
 .toDo {
   font-size: 22px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .toDo__button {
-  margin-right: 10px;
   cursor: pointer;
   background: none;
   border: 0;
   padding: 3px;
+  margin-left: 5px;
 }
 
 .allDelToDo__button {
-  margin-top: 20px;
+  padding: 5px;
+  margin: 20px 0;
   cursor: pointer;
-  background: none;
-  padding: 3px;
-  color: white;
+  color: #fff;
+  background: #222;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+  box-shadow: 2px 2px 2px #222;
+}
+.allDelToDo__button:hover {
+  color: #222;
+  background: #fff;
+}
+.allDelToDo__button:active {
+  margin-left: 2px;
+  box-shadow: none;
 }
