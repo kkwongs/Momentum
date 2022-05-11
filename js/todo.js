@@ -56,8 +56,12 @@ function paintToDo(text) {
 function handleSubmit(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
-  paintToDo(currentValue);
-  toDoInput.value = '';
+  if (currentValue.replace(/\s/g, '').length > 0) {
+    paintToDo(currentValue);
+    toDoInput.value = '';
+  } else {
+    alert('한 글자 이상 입력해주세요!!!');
+  }
 }
 
 function loadToDos() {
